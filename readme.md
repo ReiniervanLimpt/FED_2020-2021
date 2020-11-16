@@ -27,6 +27,11 @@ Ik wil graag 2 pagina's van de website van We Are Electric Festival uitwerken, i
 
 <img src="images/screenshot2.jpg" width="400px" alt="omschrijving van de pagina">
 
+## breakdown schets 1
+
+![breakdown1](https://user-images.githubusercontent.com/36195440/99259280-0d294000-281a-11eb-9339-96b7d84be877.jpg)
+
+
 ## Bronnenlijst
 1. -bron 1-
 2. -bron 2-
