@@ -14,7 +14,18 @@ Ik ga heeeeelemaal responsive... ik werk dit blok naast mijn studie ook nog aan 
 
 ## Een website die ik "leuk" vind
 
-Ik zag hem al voorbij komen in een van de introductiefilmpjes maar het lijkt mij tof om eens een poging te wagen op de site van bol, op het beoordelingsformulier zag ik al het een en ander voorbij komen over toegankelijkheid en op deze website is heel erg slim gebruik gemaakt van pseudo-classes voor verschillende vormen van navigatie.
+Ik wil graag 2 pagina's van de website van We Are Electric Festival uitwerken, ik denk dat hier toffe uitdagingen in zitten mbt. animaties an hover states.
+
+
+**Mijn opdracht:** [We Are Electric](https://www.we-are-electric.com/)
+
+**Screenshot(s) van de eerste pagina (small screen):**
+
+<img src="images/screenshot1.svg" width="375px" alt="omschrijving van de pagina">
+
+**Screenshot(s) van de tweede pagina (small screen):**
+
+<img src="images/screenshot2.svg" width="375px" alt="omschrijving van de pagina">
 
 ## Bronnenlijst
 1. -bron 1-
@@ -74,22 +85,3 @@ Ik zag hem al voorbij komen in een van de introductiefilmpjes maar het lijkt mij
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-
-
-
-## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
-
-**Je startniveau:** -kies uit zwart, rood óf blauw-
-
-**Je focus:** -kies uit responsive óf surface plane-
-
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
-
-**Screenshot(s) van de eerste pagina (small screen):**
-
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-
-**Screenshot(s) van de tweede pagina (small screen):**
-
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
