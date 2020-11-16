@@ -21,11 +21,11 @@ Ik wil graag 2 pagina's van de website van We Are Electric Festival uitwerken, i
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/screenshot1.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/screenshot1.jpg" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/screenshot2.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/screenshot2.jpg" width="375px" alt="omschrijving van de pagina">
 
 ## Bronnenlijst
 1. -bron 1-
