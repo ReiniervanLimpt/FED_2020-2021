@@ -208,6 +208,13 @@ footer button {
   div#shop__tabs-track ul li a.active {
     font-size: 1.5em;
   }
+  section footer img {
+    top: -200px;
+    left: 10%;
+    transform: translate(-30%,0);
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-height: 800px) {
