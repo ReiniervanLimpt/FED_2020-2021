@@ -153,6 +153,7 @@ section h3 {
   text-align: center;
   color: white;
   font-weight: 700;
+  padding-top: 90px;
 }
 
 section img {
@@ -201,11 +202,15 @@ footer button {
     font-size: 3em;
   }
   section img {
-    position: absolute;
-    transform: translate(-50%,0);
     max-height: 300px;
     max-width: 80vw;
-    margin-left: auto;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  section img {
+    max-height: 280px;
+    max-width: 80vw;
   }
 }
 
