@@ -205,6 +205,9 @@ footer button {
     max-height: 300px;
     max-width: 80vw;
   }
+  div#shop__tabs-track ul li a.active {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-height: 800px) {
