@@ -62,12 +62,12 @@ function updateMenuInterface(position) {
   if (position === 1) {
     item2.innerHTML = 'flavored 120z'
     item2.setAttribute('href', "#flavored120z")
-    item3.innerHTML = 'past lts drop'
+    item3.innerHTML = 'past ltd drop'
     item3.setAttribute('href', "#pltddrop")
     item4.innerHTML = 'energy'
     item4.setAttribute('href', "#energy")
   } else if (position === 2) {
-    item2.innerHTML = 'past lts drop'
+    item2.innerHTML = 'past ltd drop'
     item2.setAttribute('href', "#pltddrop")
     item3.innerHTML = 'energy'
     item3.setAttribute('href', "#energy")
@@ -92,7 +92,7 @@ function updateMenuInterface(position) {
     item2.setAttribute('href', "#ltdedition")
     item3.innerHTML = 'flavored 120z'
     item3.setAttribute('href', "#flavored120z")
-    item4.innerHTML = 'past lts drop'
+    item4.innerHTML = 'past ltd drop'
     item4.setAttribute('href', "#pltddrop")
   }
 }
