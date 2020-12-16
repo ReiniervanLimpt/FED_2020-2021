@@ -153,7 +153,7 @@ section h3 {
   text-align: center;
   color: white;
   font-weight: 700;
-  padding-top: 130px;
+  padding-top: 110px;
 }
 
 section img {
@@ -197,6 +197,19 @@ footer button {
   border: none;
 }
 
+@media screen and (max-width: 600px) {
+  section h3 {
+    font-size: 3em;
+  }
+  section img {
+    position: absolute;
+    transform: translate(-50%,0);
+    max-height: 300px;
+    max-width: 80vw;
+    margin-left: auto;
+  }
+}
+
 @keyframes previousItem {
   0% {transform: translate(-62.5%, 0%);}
   80% {transform: translate(-14.25%, 0%);}
@@ -210,9 +223,6 @@ footer button {
   90% {transform: translate(-105.65%, 0%);}
   100% {transform: translate(-107.15%, 0%);}
 }
-
-
-
 
 
 
