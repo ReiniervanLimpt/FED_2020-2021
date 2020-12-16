@@ -97,8 +97,9 @@ div#shop__tabs-track ul li a.active {
 
 .item-snap-2 {
   animation-name: previousItem;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   transform: translate(-62.5%, 0%);
+  animation-timing-function: ease-out;
 }
 
 .item-snap-3 {
@@ -107,8 +108,13 @@ div#shop__tabs-track ul li a.active {
 
 .item-snap-4 {
   animation-name: nextItem;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   transform: translate(-62.5%, 0%);
+  animation-timing-function: ease-out
+}
+
+div#shop__items {
+  scroll-snap-type: y mandatory;
 }
 
 div#shop__items section {
@@ -194,12 +200,16 @@ footer button {
 
 @keyframes previousItem {
   0% {transform: translate(-62.5%, 0%);}
-    100% {transform: translate(-17.25%, 0%);}
+  80% {transform: translate(-14.25%, 0%);}
+  90% {transform: translate(-18.75%, 0%);}
+  100% {transform: translate(-17.25%, 0%);}
 }
 
 @keyframes nextItem {
   0% {transform: translate(-62.5%, 0%);}
-    100% {transform: translate(-107.15%, 0%);}
+  80% {transform: translate(-110.15%, 0%);}
+  90% {transform: translate(-105.65%, 0%);}
+  100% {transform: translate(-107.15%, 0%);}
 }
 
 
