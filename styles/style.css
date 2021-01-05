@@ -135,7 +135,7 @@ div#shop__items {
 }
 
 div#shop__items section {
-  height: 100vh;
+  height: 800px;
   background-color: var(--plain-brand-blue);
   position: relative;
 }

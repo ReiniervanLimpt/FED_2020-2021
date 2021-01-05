@@ -109,9 +109,18 @@ function updateMenuInterface(position) {
   }
 }
 
+var mq = window.matchMedia("(max-height: 570px)");
+if (mq.matches) {
+  // window width is at less than 570px
+} else {
+  // window width is greater than 570px
+}
+
+
 window.addEventListener('scroll', function() {
   var top = window.pageYOffset || document.documentElement.scrollTop
-  if (top > 160 && top < 972) {
+  console.log(top)
+  if (top > 160 && top < 960) {
     if (menuPosition != 3) {
       if (menuPosition === 4) {
         previous()
@@ -120,7 +129,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 3
-  } else if (top > 972 && top < 1784) {
+  } else if (top > 960 && top < 1760) {
     if (menuPosition != 4) {
       if (menuPosition === 5) {
         previous()
@@ -129,7 +138,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 4
-  } else if (top > 1784 && top < 2596) {
+  } else if (top > 1760 && top < 2560) {
     if (menuPosition != 5) {
       if (menuPosition === 1) {
         previous()
@@ -138,7 +147,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 5
-  } else if (top > 2596 && top < 3350) {
+  } else if (top > 2560 && top < 3300) {
     if (menuPosition != 1) {
       if (menuPosition === 2) {
         previous()
@@ -147,7 +156,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 1
-  } else if (top > 3350) {
+  } else if (top > 3300) {
     if (menuPosition != 2) {
       if (menuPosition === 3) {
         previous()
