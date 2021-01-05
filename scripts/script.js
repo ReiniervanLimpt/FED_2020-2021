@@ -120,7 +120,7 @@ if (mq.matches) {
 window.addEventListener('scroll', function() {
   var top = window.pageYOffset || document.documentElement.scrollTop
   console.log(top)
-  if (top > 160 && top < 960) {
+  if (top > 160 && top < 900) {
     if (menuPosition != 3) {
       if (menuPosition === 4) {
         previous()
@@ -129,7 +129,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 3
-  } else if (top > 960 && top < 1760) {
+  } else if (top > 900 && top < 1700) {
     if (menuPosition != 4) {
       if (menuPosition === 5) {
         previous()
@@ -138,7 +138,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 4
-  } else if (top > 1760 && top < 2560) {
+  } else if (top > 1700 && top < 2500) {
     if (menuPosition != 5) {
       if (menuPosition === 1) {
         previous()
@@ -147,7 +147,7 @@ window.addEventListener('scroll', function() {
       }
     }
     menuPosition = 5
-  } else if (top > 2560 && top < 3300) {
+  } else if (top > 2500 && top < 3300) {
     if (menuPosition != 1) {
       if (menuPosition === 2) {
         previous()
