@@ -15,6 +15,7 @@ trackTabs.forEach(item => {
 })
 
 function previous() {
+  console.log("previous")
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-2`)
   setTimeout(function() {
@@ -23,36 +24,25 @@ function previous() {
     shopTrack.className = ''
     shopTrack.classList.remove(`item-snap-2`)
     shopTrack.classList.add(`item-snap-3`)
-    if (menuPosition != 1) {
-      menuPosition--
-    } else {
-      menuPosition = 5
-    }
     updateMenuInterface(menuPosition)
   }, 300)
 }
 
 function next() {
+  console.log("next")
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-4`)
   setTimeout(function() {
     const latestActiveItem = document.querySelector('.active')
-    console.log(latestActiveItem)
     latestActiveItem.classList.remove('active')
     shopTrack.className = ''
     shopTrack.classList.remove(`item-snap-4`)
     shopTrack.classList.add(`item-snap-3`)
-    if (menuPosition != 5) {
-      menuPosition++
-    } else {
-      menuPosition = 1
-    }
     updateMenuInterface(menuPosition)
   }, 300)
 }
 
 function updateMenuInterface(position) {
-  console.log(position)
   const item1 = document.querySelector('#shop-item-1')
   const item2 = document.querySelector('#shop-item-2')
   const item3 = document.querySelector('#shop-item-3')
@@ -118,3 +108,67 @@ function updateMenuInterface(position) {
     item5.setAttribute('href', "#energy")
   }
 }
+
+window.addEventListener('scroll', function() {
+  var top = window.pageYOffset || document.documentElement.scrollTop
+  if (top > 160 && top < 972) {
+    if (menuPosition != 3) {
+      if (menuPosition === 4) {
+        previous()
+      } else {
+        next()
+      }
+    }
+    menuPosition = 3
+  } else if (top > 972 && top < 1784) {
+    if (menuPosition != 4) {
+      if (menuPosition === 5) {
+        previous()
+      } else {
+        next()
+      }
+    }
+    menuPosition = 4
+  } else if (top > 1784 && top < 2596) {
+    if (menuPosition != 5) {
+      if (menuPosition === 1) {
+        previous()
+      } else {
+        next()
+      }
+    }
+    menuPosition = 5
+  } else if (top > 2596 && top < 3350) {
+    if (menuPosition != 1) {
+      if (menuPosition === 2) {
+        previous()
+      } else {
+        next()
+      }
+    }
+    menuPosition = 1
+  } else if (top > 3350) {
+    if (menuPosition != 2) {
+      if (menuPosition === 3) {
+        previous()
+      } else {
+        next()
+      }
+    }
+    menuPosition = 2
+  }
+})
+
+// detect where sections are
+
+const el1 = document.querySelector('#plain').getBoundingClientRect()
+const el2 = document.querySelector('#ltdedition').getBoundingClientRect()
+const el3 = document.querySelector('#flavored120z').getBoundingClientRect()
+const el4 = document.querySelector('#pltddrop').getBoundingClientRect()
+const el5 = document.querySelector('#energy').getBoundingClientRect()
+
+console.log(el1.top)
+console.log(el2.top)
+console.log(el3.top)
+console.log(el4.top)
+console.log(el5.top)
