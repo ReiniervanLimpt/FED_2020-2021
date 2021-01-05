@@ -268,6 +268,32 @@ section:nth-of-type(even) footer img.mascot {
   left: 75%;
 }
 
+footer {
+  padding-top: 30px;
+  position: relative;
+  height: 200px;
+}
+
+footer ul li {
+  font-size: 2em;
+  font-family: 'Nerko One', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ugly-blue)
+}
+
+footer img {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%, 0%);
+}
+
+section > footer > img {
+  width: auto;
+}
+
 footer button {
   font-family: 'Nerko One', cursive;
   text-transform: uppercase;
