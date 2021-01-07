@@ -220,7 +220,7 @@ section {
 
 article h3 {
   font-family: 'Nerko One', cursive;
-  font-size: 5em;
+  font-size: 3.5em;
   text-align: center;
   color: white;
   font-weight: 700;
@@ -334,6 +334,10 @@ section article footer button {
     position: sticky;
     background-color: var(--brand-blue-dark);
     height: 120px;
+  }
+
+  header nav ul li:nth-last-of-type(3) {
+    margin: auto;
   }
 
   div#shop__tabs-track {
@@ -474,6 +478,20 @@ section article footer button {
   div#shop__items section article div {
     padding: 2em;
     height: 360px;
+  }
+
+  div#shop__items section article span {
+    width: 84px;
+    height: 84px;
+    padding: 20px;
+  }
+
+  div#shop__items section article span strong {
+    font-size: 2em;
+  }
+
+  div#shop__items section article span small{
+    font-size: 0.8em;
   }
 
   section article:nth-of-type(even) span {
