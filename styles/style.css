@@ -8,6 +8,7 @@
 
   --plain-brand-blue: #26c9ff;
   --brand-blue-dark: #02a9e0;
+  --brand-blue-darker: #077e9e;
 
   --brand-red: #e40032;
   --brand-red-dark: #e16a1b;
@@ -65,6 +66,7 @@ nav ul li img {
 }
 
 div#page {
+  background-color: var(--brand-blue-dark);
   position: relative;
 }
 
@@ -80,6 +82,19 @@ div#shop__tabs-track {
   background-position: center;
 }
 
+/* div#shop__tabs-track::after {
+  content: '';
+  background-image: url("../images/tabs-elem.svg");
+  background-color: #fff;
+  display: block;
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+} */
+
 div#shop__tabs-track ul {
   display: flex;
   height: 80px;
@@ -93,9 +108,9 @@ div#shop__tabs-track ul li {
   text-align: center;
   text-transform: uppercase;
   min-width: 30%;
-  background-color: white;
   margin-left: 7.5%;
   margin-right: 7.5%;
+  background-color: white;
 }
 
 div#shop__tabs-track ul li a {
@@ -134,37 +149,41 @@ div#shop__items {
   scroll-snap-type: y mandatory;
 }
 
-div#shop__items section {
-  height: 800px;
+div#shop__items section > article {
+  height: 2400px;
   background-color: var(--plain-brand-blue);
   position: relative;
 }
 
-div#shop__items section div{
-  position: relative;
-  padding: calc(2em + 80px) 2em 2em 2em;
-  height: calc(100vh - 140px);
+div#shop__items section > article {
+  height: 800px;
 }
 
-div#shop__items section h3{
+div#shop__items article div{
+  position: relative;
+  padding: calc(2em + 80px) 2em 2em 2em;
+  height: 660px;
+}
+
+div#shop__items article h3{
   text-transform: uppercase;
   align-self: flex-start;
   width: 100%;
 }
 
-div#shop__items section:nth-of-type(2) {
+div#shop__items section:nth-of-type(2) article{
   background-color: var(--brand-red);
 }
 
-div#shop__items section:nth-of-type(3) {
+div#shop__items section:nth-of-type(3) article{
   background-color: var(--brand-purple);
 }
 
-div#shop__items section:nth-of-type(4) {
+div#shop__items section:nth-of-type(4) article{
   background-color: var(--brand-pink);
 }
 
-div#shop__items section:nth-of-type(5) {
+div#shop__items section:nth-of-type(5) article{
   background-color: var(--brand-lime);
 }
 
@@ -175,23 +194,23 @@ div#shop__items section p{
   font-family: 'Nerko One', cursive;
 }
 
-div#shop__items section:nth-of-type(1) p{
+div#shop__items section:nth-of-type(1) article p{
   color: var(--brand-blue-dark);
 }
 
-div#shop__items section:nth-of-type(2) p{
+div#shop__items section:nth-of-type(2) article p{
   color: var(--brand-red-dark);
 }
 
-div#shop__items section:nth-of-type(3) p{
+div#shop__items section:nth-of-type(3) article p{
   color: var(--brand-purple-dark);
 }
 
-div#shop__items section:nth-of-type(4) p{
+div#shop__items section:nth-of-type(4) article p{
   color: var(--brand-pink-dark);
 }
 
-div#shop__items section:nth-of-type(5) p{
+div#shop__items section:nth-of-type(5) article p{
   color: var(--brand-lime-dark);
 }
 
@@ -199,7 +218,7 @@ section {
   text-align: center;
 }
 
-section h3 {
+article h3 {
   font-family: 'Nerko One', cursive;
   font-size: 5em;
   text-align: center;
@@ -207,7 +226,7 @@ section h3 {
   font-weight: 700;
 }
 
-section span {
+article span {
   transform: rotate(17deg);
   display: flex;
   position: absolute;
@@ -218,36 +237,34 @@ section span {
   height: 84px;
   padding: 20px;
   background-image: url('../images/span-flag.svg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
-section:nth-of-type(even) span {
-  left: 5%;
-  transform: rotate(-17deg);
-}
-
-section span strong, section span small{
+article span strong, article span small{
   width: 100%;
   font-family: 'Nerko One', cursive;
   color: white;
   padding: auto;
 }
 
-section span strong {
+article span strong {
   font-size: 2em;
   line-height: 80%;
 }
 
 
-section footer {
+article footer {
   width: 100%;
   position: absolute;
-  background-color: #02a9e0;
+  background-color: var(--brand-blue-dark);
   height: 140px;
   bottom: 0;
   left: 0;
 }
 
-section footer img {
+article footer img {
   position: absolute;
   height: 450px;
   top: -405px;
@@ -255,7 +272,7 @@ section footer img {
   transform: translate(-50%,0);
 }
 
-section footer img.mascot {
+article footer img.mascot {
   position: absolute;
   height: 200px;
   left: 25%;
@@ -264,7 +281,7 @@ section footer img.mascot {
   transform: translate(-50%,0);
 }
 
-section:nth-of-type(even) footer img.mascot {
+section article:nth-of-type(even) footer img.mascot {
   left: 75%;
 }
 
@@ -290,17 +307,17 @@ footer img {
   transform: translate(-50%, 0%);
 }
 
-section > footer > img {
+article > footer > img {
   width: auto;
 }
 
-footer button {
+section article footer button {
   font-family: 'Nerko One', cursive;
   text-transform: uppercase;
   color: white;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
-  background-color: #161F6D;
+  background-color: var(--ugly-blue);
   border-radius: 30px;
   width: 60%;
   padding: 0.3em;
@@ -311,9 +328,127 @@ footer button {
   border: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 760px) {
+
+  header {
+    position: sticky;
+    background-color: var(--brand-blue-dark);
+    height: 120px;
+  }
+
+  div#shop__tabs-track {
+    background-color: var(--brand-blue-dark);
+    background-image: none;
+    margin-bottom: 30px;
+  }
+
+  div#shop__tabs-track ul li{
+    min-width: 20%;
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: var(--brand-blue-dark);
+  }
+
+  div#shop__tabs-track ul li a{
+    color: var(--brand-blue-darker);
+  }
+
+  div#shop__tabs-track ul li a.active.active {
+    color: white;
+  }
+
+  .item-snap-2 {
+    animation-name: none;
+    animation-duration: none;
+    transform: none;
+    animation-timing-function: none;
+  }
+
+  .item-snap-3 {
+    transform: none;
+  }
+
+  .item-snap-4 {
+    animation-name: none;
+    animation-duration: none;
+    transform: none;
+    animation-timing-function: none;
+  }
+
+
   section h3 {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  section span {
+    top: 30%;
+    right: 5%;
+  }
+
+  div#shop__items {
+    width: 95%;
+    margin: auto;
+  }
+
+  div#shop__items > section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#shop__items section > article {
+    width: 33%;
+  }
+
+  div#shop__items section > article, div#shop__items section {
+    height: 400px;
+  }
+
+  div#shop__items section article p {
+    font-size: 1.2em;
+  }
+
+  div#shop__items section article span {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  div#shop__items section article span strong {
+    font-size: 1.5em;
+  }
+
+  div#shop__items section article span small{
+    font-size: 0.8em;
+  }
+
+  div#shop__items section article div {
+    padding: 2em;
+    height: 260px;
+  }
+
+  section article:nth-of-type(even) span {
+    right: 5%;
+    transform: rotate(17deg);
+  }
+
+  section article:nth-of-type(even) footer img.mascot {
+    left: 35%;
+  }
+
+  section article footer button {
+    font-size: 1.5em;
+  }
+
+  section article footer img {
+    height: 180px;
+    top: -160px;
+  }
+
+  section article footer img.mascot {
+    height: 100px;
+    top: -80px;
+    left: 35%;
   }
   /* section img {
     max-height: 350px;
@@ -323,11 +458,53 @@ footer button {
   }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (min-width: 1200px) {
+  section h3 {
+    font-size: 3em;
+  }
+
+  div#shop__items section > article, div#shop__items section {
+    height: 500px;
+  }
+
+  div#shop__items section article p {
+    font-size: 1.5em;
+  }
+
+  div#shop__items section article div {
+    padding: 2em;
+    height: 360px;
+  }
+
+  section article:nth-of-type(even) span {
+    right: 5%;
+    transform: rotate(17deg);
+  }
+
+  section article:nth-of-type(even) footer img.mascot {
+    left: 35%;
+  }
+
+  section article footer button {
+    font-size: 1.5em;
+  }
+
+  section article footer img {
+    height: 240px;
+    top: -215px;
+  }
+
+  section article footer img.mascot {
+    height: 140px;
+    top: -120px;
+    left: 35%;
+  }
   /* section img {
-    max-height: 280px;
-    max-width: 80vw;
+    max-height: 350px;
   } */
+  div#shop__tabs-track ul li a.active {
+    font-size: 1.5em;
+  }
 }
 
 @keyframes previousItem {

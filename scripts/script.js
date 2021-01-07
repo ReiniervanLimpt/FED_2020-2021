@@ -3,6 +3,12 @@ const trackTab = document.querySelector('#shop__tabs-track')
 const shopTrack = trackTab.querySelector('ul')
 const trackTabs = trackTab.querySelectorAll('li')
 
+const item1 = document.querySelector('#shop-item-1')
+const item2 = document.querySelector('#shop-item-2')
+const item3 = document.querySelector('#shop-item-3')
+const item4 = document.querySelector('#shop-item-4')
+const item5 = document.querySelector('#shop-item-5')
+
 let menuPosition = 3
 
 trackTabs.forEach(item => {
@@ -15,7 +21,6 @@ trackTabs.forEach(item => {
 })
 
 function previous() {
-  console.log("previous")
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-2`)
   setTimeout(function() {
@@ -29,7 +34,6 @@ function previous() {
 }
 
 function next() {
-  console.log("next")
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-4`)
   setTimeout(function() {
@@ -43,11 +47,6 @@ function next() {
 }
 
 function updateMenuInterface(position) {
-  const item1 = document.querySelector('#shop-item-1')
-  const item2 = document.querySelector('#shop-item-2')
-  const item3 = document.querySelector('#shop-item-3')
-  const item4 = document.querySelector('#shop-item-4')
-  const item5 = document.querySelector('#shop-item-5')
 
   item3.classList.add('active')
 
@@ -109,62 +108,82 @@ function updateMenuInterface(position) {
   }
 }
 
-var mq = window.matchMedia("(max-height: 570px)");
-if (mq.matches) {
-  // window width is at less than 570px
-} else {
-  // window width is greater than 570px
-}
-
-
 window.addEventListener('scroll', function() {
-  var top = window.pageYOffset || document.documentElement.scrollTop
-  console.log(top)
-  if (top > 160 && top < 880) {
-    if (menuPosition != 3) {
-      if (menuPosition === 4) {
-        previous()
-      } else {
-        next()
+
+  const body = document.body,
+    html = document.documentElement
+
+  let height = Math.max(body.scrollHeight, body.offsetHeight,
+    html.clientHeight, html.scrollHeight, html.offsetHeight)
+
+  if (height > 3000) {
+
+  } else {
+    item1.removeAttribute("href")
+    item2.removeAttribute("onclick")
+    item4.removeAttribute("onclick")
+    item5.removeAttribute("href")
+    item1.innerHTML = 'plain'
+    item1.setAttribute('href', "#plain")
+    item2.innerHTML = 'ltd edition'
+    item2.setAttribute('href', "#ltdedition")
+    item3.innerHTML = 'flavored 120z'
+    item3.setAttribute('href', "#flavored120z")
+    item4.innerHTML = 'past lts drop'
+    item4.setAttribute('href', "#pltddrop")
+    item5.innerHTML = 'energy'
+    item5.setAttribute('href', "#energy")
+  }
+
+  if (height > 3000) {
+    let top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (top > 160 && top < 2480 && height > 3000) {
+      if (menuPosition != 3) {
+        if (menuPosition === 4) {
+          previous()
+        } else {
+          next()
+        }
       }
-    }
-    menuPosition = 3
-  } else if (top > 880 && top < 1680) {
-    if (menuPosition != 4) {
-      if (menuPosition === 5) {
-        previous()
-      } else {
-        next()
+      menuPosition = 3
+    } else if (top > 2480 && top < 4880 && height > 3000) {
+      if (menuPosition != 4) {
+        if (menuPosition === 5) {
+          previous()
+        } else {
+          next()
+        }
       }
-    }
-    menuPosition = 4
-  } else if (top > 1680 && top < 2480) {
-    if (menuPosition != 5) {
-      if (menuPosition === 1) {
-        previous()
-      } else {
-        next()
+      menuPosition = 4
+    } else if (top > 4880 && top < 7280 && height > 3000) {
+      if (menuPosition != 5) {
+        if (menuPosition === 1) {
+          previous()
+        } else {
+          next()
+        }
       }
-    }
-    menuPosition = 5
-  } else if (top > 2480 && top < 3280) {
-    if (menuPosition != 1) {
-      if (menuPosition === 2) {
-        previous()
-      } else {
-        next()
+      menuPosition = 5
+    } else if (top > 7280 && top < 9680 && height > 3000) {
+      if (menuPosition != 1) {
+        if (menuPosition === 2) {
+          previous()
+        } else {
+          next()
+        }
       }
-    }
-    menuPosition = 1
-  } else if (top > 3280) {
-    if (menuPosition != 2) {
-      if (menuPosition === 3) {
-        previous()
-      } else {
-        next()
+      menuPosition = 1
+    } else if (top > 9680 && height > 3000) {
+      if (menuPosition != 2) {
+        if (menuPosition === 3) {
+          previous()
+        } else {
+          next()
+        }
       }
+      menuPosition = 2
     }
-    menuPosition = 2
   }
 })
 
