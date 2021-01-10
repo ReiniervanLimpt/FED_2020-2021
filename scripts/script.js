@@ -1,7 +1,9 @@
-// JavaScript Document
 const trackTab = document.querySelector('#shop__tabs-track')
 const shopTrack = trackTab.querySelector('ul')
 const trackTabs = trackTab.querySelectorAll('li')
+
+const allShopItems = document.querySelector('#shop__items')
+allShopItems.querySelectorAll('article').forEach(item => console.log(item))
 
 const item1 = document.querySelector('#shop-item-1')
 const item2 = document.querySelector('#shop-item-2')
@@ -11,6 +13,8 @@ const item5 = document.querySelector('#shop-item-5')
 
 let menuPosition = 3
 
+
+// adds feedback to every menu item
 trackTabs.forEach(item => {
   item.addEventListener('click', () => {
     const latestActiveItem = document.querySelector('.active')
@@ -20,9 +24,11 @@ trackTabs.forEach(item => {
   })
 })
 
+// makes the menu snap back, initiates the previousItem animation
 function previous() {
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-2`)
+  // waits for animation to finish
   setTimeout(function() {
     const latestActiveItem = document.querySelector('.active')
     latestActiveItem.classList.remove('active')
@@ -33,9 +39,13 @@ function previous() {
   }, 300)
 }
 
+// and forward, initiates the nextItem animation
 function next() {
   shopTrack.className = ''
   shopTrack.classList.add(`item-snap-4`)
+  // item-snap-4 had a different translate position value which makes the menu move thanks to a transition
+  // item-snap-3 is the default position and centers te menuPosition
+  // after the animation of the menu has finished its position is reset through item-snap-3 and the menus values are changed in updateMenuInterface()
   setTimeout(function() {
     const latestActiveItem = document.querySelector('.active')
     latestActiveItem.classList.remove('active')
@@ -46,16 +56,19 @@ function next() {
   }, 300)
 }
 
+// overwrites menu items values to simulate the menu posion has changed, while it instead snapped back to the previous position.
 function updateMenuInterface(position) {
 
   item3.classList.add('active')
 
+
+  // this is a little sloppy, need to refactor this later
   if (position === 1) {
     item1.innerHTML = 'ltd edition'
     item1.setAttribute('href', "#ltdedition")
     item2.innerHTML = 'flavored 120z'
     item2.setAttribute('href', "#flavored120z")
-    item3.innerHTML = 'past lts drop'
+    item3.innerHTML = 'past ltd drop'
     item3.setAttribute('href', "#pltddrop")
     item4.innerHTML = 'energy'
     item4.setAttribute('href', "#energy")
@@ -64,7 +77,7 @@ function updateMenuInterface(position) {
   } else if (position === 2) {
     item1.innerHTML = 'flavored 120z'
     item1.setAttribute('href', "#flavored120z")
-    item2.innerHTML = 'past lts drop'
+    item2.innerHTML = 'past ltd drop'
     item2.setAttribute('href', "#pltddrop")
     item3.innerHTML = 'energy'
     item3.setAttribute('href', "#energy")
@@ -73,7 +86,7 @@ function updateMenuInterface(position) {
     item5.innerHTML = 'ltd edition'
     item5.setAttribute('href', "#ltdedition")
   } else if (position === 3) {
-    item1.innerHTML = 'past lts drop'
+    item1.innerHTML = 'past ltd drop'
     item1.setAttribute('href', "#pltddrop")
     item2.innerHTML = 'energy'
     item2.setAttribute('href', "#energy")
@@ -92,7 +105,7 @@ function updateMenuInterface(position) {
     item3.setAttribute('href', "#ltdedition")
     item4.innerHTML = 'flavored 120z'
     item4.setAttribute('href', "#flavored120z")
-    item5.innerHTML = 'past lts drop'
+    item5.innerHTML = 'past ltd drop'
     item5.setAttribute('href', "#pltddrop")
   } else {
     item1.innerHTML = 'plain'
@@ -101,13 +114,14 @@ function updateMenuInterface(position) {
     item2.setAttribute('href', "#ltdedition")
     item3.innerHTML = 'flavored 120z'
     item3.setAttribute('href', "#flavored120z")
-    item4.innerHTML = 'past lts drop'
+    item4.innerHTML = 'past ltd drop'
     item4.setAttribute('href', "#pltddrop")
     item5.innerHTML = 'energy'
     item5.setAttribute('href', "#energy")
   }
 }
 
+// scroll e
 window.addEventListener('scroll', function() {
 
   const body = document.body,
@@ -116,9 +130,10 @@ window.addEventListener('scroll', function() {
   let height = Math.max(body.scrollHeight, body.offsetHeight,
     html.clientHeight, html.scrollHeight, html.offsetHeight)
 
-  if (height > 3000) {
-
+  if (height > 4200) {
+    // mobile
   } else {
+    // desktop / tablet
     item1.removeAttribute("href")
     item2.removeAttribute("onclick")
     item4.removeAttribute("onclick")
@@ -129,16 +144,16 @@ window.addEventListener('scroll', function() {
     item2.setAttribute('href', "#ltdedition")
     item3.innerHTML = 'flavored 120z'
     item3.setAttribute('href', "#flavored120z")
-    item4.innerHTML = 'past lts drop'
+    item4.innerHTML = 'past ltd drop'
     item4.setAttribute('href', "#pltddrop")
     item5.innerHTML = 'energy'
     item5.setAttribute('href', "#energy")
   }
 
-  if (height > 3000) {
+  if (height > 4200) {
     let top = window.pageYOffset || document.documentElement.scrollTop
 
-    if (top > 160 && top < 2480 && height > 3000) {
+    if (top > 160 && top < 2400 && height > 4200) {
       if (menuPosition != 3) {
         if (menuPosition === 4) {
           previous()
@@ -147,7 +162,7 @@ window.addEventListener('scroll', function() {
         }
       }
       menuPosition = 3
-    } else if (top > 2480 && top < 4880 && height > 3000) {
+    } else if (top > 2400 && top < 4680 && height > 4200) {
       if (menuPosition != 4) {
         if (menuPosition === 5) {
           previous()
@@ -156,7 +171,7 @@ window.addEventListener('scroll', function() {
         }
       }
       menuPosition = 4
-    } else if (top > 4880 && top < 7280 && height > 3000) {
+    } else if (top > 4680 && top < 6940 && height > 4200) {
       if (menuPosition != 5) {
         if (menuPosition === 1) {
           previous()
@@ -165,7 +180,7 @@ window.addEventListener('scroll', function() {
         }
       }
       menuPosition = 5
-    } else if (top > 7280 && top < 9680 && height > 3000) {
+    } else if (top > 6940 && top < 9240 && height > 4200) {
       if (menuPosition != 1) {
         if (menuPosition === 2) {
           previous()
@@ -174,7 +189,7 @@ window.addEventListener('scroll', function() {
         }
       }
       menuPosition = 1
-    } else if (top > 9680 && height > 3000) {
+    } else if (top > 9240 && height > 4200) {
       if (menuPosition != 2) {
         if (menuPosition === 3) {
           previous()
@@ -187,7 +202,7 @@ window.addEventListener('scroll', function() {
   }
 })
 
-// detect where sections are
+// detect where sections are on Y axis
 
 const el1 = document.querySelector('#plain').getBoundingClientRect()
 const el2 = document.querySelector('#ltdedition').getBoundingClientRect()
