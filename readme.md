@@ -31,17 +31,11 @@ Ik wil graag 2 pagina's van de website van Ugly Drinks namaken, deze website vin
 
 ![detail](https://user-images.githubusercontent.com/36195440/104191522-e6544800-541d-11eb-9d64-c6d7d2786d7e.png)
 
-## breakdown schets 1
+## breakdown schets 1: dit is de breakdown schets die ik had gemaakt voor de website van We Are Electric (mijn eerste keuze).
+Ik was van deze website afgestapt omdat deze naar mijn mening niet genoeg uitdaging had en de website niet meer onderhouden werd.
+
 
 ![breakdown1](https://user-images.githubusercontent.com/36195440/99259280-0d294000-281a-11eb-9339-96b7d84be877.jpg)
-
-
-## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
-
-
 
 ## Eindgesprek (week 7/8)
 
