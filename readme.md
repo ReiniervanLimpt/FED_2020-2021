@@ -63,3 +63,9 @@ Als extra laag heb ik ervoor gekozen om mijn pagina responsive te maken, De uitd
 ![navigation](https://user-images.githubusercontent.com/36195440/104194701-f110dc00-5421-11eb-8715-1ccc880cead7.gif)
 
 In mijn navigatie zit een animatie verwerkt op mobiel scherm, met scroll events wordt het menu geupdate als de gebruiker scrolled, ik heb mijn JS bestand voorzien met commentaar waarin ik beschrijf hoe ik dit heb aangepakt.
+
+## bronnen
+the usual: 
+- MDN Web Docs
+- W3schools
+- Stackoverflow threads
