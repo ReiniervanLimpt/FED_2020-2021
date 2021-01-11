@@ -37,54 +37,17 @@ Ik was van deze website afgestapt omdat deze naar mijn mening niet genoeg uitdag
 
 ![breakdown1](https://user-images.githubusercontent.com/36195440/99259280-0d294000-281a-11eb-9339-96b7d84be877.jpg)
 
-## Eindgesprek (week 7/8)
+## voortgang
 
--dit ging goed & dit was lastig-
+Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waar ik de uitdaging heb opgezocht en wat ik verder nog zou willen aanpassen aan de pagina..
 
-**Screenshot(s):**
+### TO-DO's
 
--screenshot(s) van je eindresultaat-
-
-
-
-## Voortgang 3 (week 6)
-
--same as voortgang 1-
-
-
-
-## Voortgang 2 (week 5)
-
--same as voortgang 1-
-
-
-
-## Voortgang 1 (week 3)
-
-### Stand van zaken
-
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
-
-
-## Breakdownschets (week 1)
-
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+- [x] Maak het snappable menu na
+- [x] Maak shop responsive
+- [x] positioneer met flexbox en position values
+- [x] CSS variabelen (kleur)
+- [x] JS micro interactie in navigatie / scroll events
+- [x] Navigatie animatie
+- [ ] SVG animatie
+- [ ] Extra toegankelijkheids laag
