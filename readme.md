@@ -14,18 +14,22 @@ Ik ga heeeeelemaal responsive... ik werk dit blok naast mijn studie ook nog aan 
 
 ## Een website die ik "leuk" vind
 
-Ik wil graag 2 pagina's van de website van We Are Electric Festival uitwerken, ik denk dat hier toffe uitdagingen in zitten mbt. animaties an hover states.
+Ik wil graag 2 pagina's van de website van Ugly Drinks namaken, deze website vind ik op de awwwards website en sprak me meteen aan door de cartoony website en toffe nimaties.
 
 
-**Mijn opdracht:** [We Are Electric](https://www.we-are-electric.com/)
+**Mijn opdracht:** [Ugly Drinks](https://uglydrinks.com/#!)
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/screenshot1.jpg" width="400px" alt="omschrijving van de pagina">
+## shop
+
+![shop](https://user-images.githubusercontent.com/36195440/104191528-e6ecde80-541d-11eb-8e07-c1476e1d08ff.png)
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/screenshot2.jpg" width="400px" alt="omschrijving van de pagina">
+## detail
+
+![detail](https://user-images.githubusercontent.com/36195440/104191522-e6544800-541d-11eb-9d64-c6d7d2786d7e.png)
 
 ## breakdown schets 1
 
