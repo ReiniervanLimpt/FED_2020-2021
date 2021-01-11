@@ -51,6 +51,7 @@ Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waa
 - [x] Navigatie animatie
 - [ ] SVG animatie
 - [ ] Extra toegankelijkheids laag
+- [ ] html elementen nogmaals checken op semantiek
 
 
 ## uitdagingen
