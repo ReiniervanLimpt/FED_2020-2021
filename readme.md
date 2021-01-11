@@ -73,10 +73,10 @@ the usual:
 - Stackoverflow threads
 
 ## codepen oeffeningen
-[Flexbox 1:]https://codepen.io/ReiniervLimpt/pen/oNLOLVE
+[Flexbox 1](https://codepen.io/ReiniervLimpt/pen/oNLOLVE)
 
-[Flexbox 2:]https://codepen.io/ReiniervLimpt/pen/QWEPBZX
+[Flexbox 2](https://codepen.io/ReiniervLimpt/pen/QWEPBZX)
 
-[Positioneren:]https://codepen.io/ReiniervLimpt/pen/pobYRKg
+[Positioneren](https://codepen.io/ReiniervLimpt/pen/pobYRKg)
 
-[Typografie 1 & 2]https://codepen.io/ReiniervLimpt/pen/wvWQQgK
+[Typografie 1 & 2](https://codepen.io/ReiniervLimpt/pen/wvWQQgK)
