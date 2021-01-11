@@ -3,7 +3,10 @@ const shopTrack = trackTab.querySelector('ul')
 const trackTabs = trackTab.querySelectorAll('li')
 
 const allShopItems = document.querySelector('#shop__items')
-allShopItems.querySelectorAll('article').forEach(item => console.log(item))
+allShopItems.querySelectorAll('article').forEach(item =>
+  item.addEventListener('click', () => {
+    window.location.href = "detail.html";
+  }))
 
 const item1 = document.querySelector('#shop-item-1')
 const item2 = document.querySelector('#shop-item-2')
@@ -11,8 +14,9 @@ const item3 = document.querySelector('#shop-item-3')
 const item4 = document.querySelector('#shop-item-4')
 const item5 = document.querySelector('#shop-item-5')
 
+// this variable keeps track of which item of the menu needs to be shown
+// this variable is used to determine what the next and previous item should be in updateMenuInterface()
 let menuPosition = 3
-
 
 // adds feedback to every menu item
 trackTabs.forEach(item => {
@@ -121,11 +125,38 @@ function updateMenuInterface(position) {
   }
 }
 
-// scroll e
-window.addEventListener('scroll', function() {
+const body = document.body,
+  html = document.documentElement
 
-  const body = document.body,
-    html = document.documentElement
+let height = Math.max(body.scrollHeight, body.offsetHeight,
+  html.clientHeight, html.scrollHeight, html.offsetHeight)
+
+
+// checks the body height to find out which menu to show
+// when the height is bigger than 4200 the layout switches to column view
+// otherwise it shows the other menu at landscape layout
+if (height > 4200) {
+  // mobile
+} else {
+  // desktop / tablet
+  item1.removeAttribute("href")
+  item2.removeAttribute("onclick")
+  item4.removeAttribute("onclick")
+  item5.removeAttribute("href")
+  item1.innerHTML = 'plain'
+  item1.setAttribute('href', "#plain")
+  item2.innerHTML = 'ltd edition'
+  item2.setAttribute('href', "#ltdedition")
+  item3.innerHTML = 'flavored 120z'
+  item3.setAttribute('href', "#flavored120z")
+  item4.innerHTML = 'past ltd drop'
+  item4.setAttribute('href', "#pltddrop")
+  item5.innerHTML = 'energy'
+  item5.setAttribute('href', "#energy")
+}
+
+// the menu is also updated based on the viewers scroll position in portrait layout
+window.addEventListener('scroll', function() {
 
   let height = Math.max(body.scrollHeight, body.offsetHeight,
     html.clientHeight, html.scrollHeight, html.offsetHeight)
@@ -204,14 +235,14 @@ window.addEventListener('scroll', function() {
 
 // detect where sections are on Y axis
 
-const el1 = document.querySelector('#plain').getBoundingClientRect()
-const el2 = document.querySelector('#ltdedition').getBoundingClientRect()
-const el3 = document.querySelector('#flavored120z').getBoundingClientRect()
-const el4 = document.querySelector('#pltddrop').getBoundingClientRect()
-const el5 = document.querySelector('#energy').getBoundingClientRect()
-
-console.log(el1.top)
-console.log(el2.top)
-console.log(el3.top)
-console.log(el4.top)
-console.log(el5.top)
+// const el1 = document.querySelector('#plain').getBoundingClientRect()
+// const el2 = document.querySelector('#ltdedition').getBoundingClientRect()
+// const el3 = document.querySelector('#flavored120z').getBoundingClientRect()
+// const el4 = document.querySelector('#pltddrop').getBoundingClientRect()
+// const el5 = document.querySelector('#energy').getBoundingClientRect()
+//
+// console.log(el1.top)
+// console.log(el2.top)
+// console.log(el3.top)
+// console.log(el4.top)
+// console.log(el5.top)
