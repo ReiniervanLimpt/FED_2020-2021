@@ -51,3 +51,15 @@ Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waa
 - [x] Navigatie animatie
 - [ ] SVG animatie
 - [ ] Extra toegankelijkheids laag
+
+
+## uitdagingen
+### responsive 
+![responsive](https://user-images.githubusercontent.com/36195440/104194684-ed7d5500-5421-11eb-93b6-a95988f7b67c.gif)
+
+Als extra laag heb ik ervoor gekozen om mijn pagina responsive te maken, De uitdaging lag hier in het menu dat zich anders gedraagt op kleine en grote schermen.
+
+### Animatie en scroll events
+![navigation](https://user-images.githubusercontent.com/36195440/104194701-f110dc00-5421-11eb-8715-1ccc880cead7.gif)
+
+In mijn navigatie zit een animatie verwerkt op mobiel scherm, met scroll events wordt het menu geupdate als de gebruiker scrolled, ik heb mijn JS bestand voorzien met commentaar waarin ik beschrijf hoe ik dit heb aangepakt.
