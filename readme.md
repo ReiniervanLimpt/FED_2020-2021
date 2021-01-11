@@ -41,7 +41,7 @@ Ik was van deze website afgestapt omdat deze naar mijn mening niet genoeg uitdag
 
 Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waar ik de uitdaging heb opgezocht en wat ik verder nog zou willen aanpassen aan de pagina..
 
-### TO-DO's
+### TO-DO's & would/should haves
 
 - [x] Maak het snappable menu na
 - [x] Maak shop responsive
@@ -51,6 +51,7 @@ Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waa
 - [x] Navigatie animatie
 - [ ] SVG animatie
 - [ ] Extra toegankelijkheids laag
+- [ ] Formulieren met gestileerde states
 - [ ] html elementen nogmaals checken op semantiek
 
 
