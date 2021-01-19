@@ -14,79 +14,69 @@ Ik ga heeeeelemaal responsive... ik werk dit blok naast mijn studie ook nog aan 
 
 ## Een website die ik "leuk" vind
 
-Ik wil graag 2 pagina's van de website van We Are Electric Festival uitwerken, ik denk dat hier toffe uitdagingen in zitten mbt. animaties an hover states.
+Ik wil graag 2 pagina's van de website van Ugly Drinks namaken, deze website vind ik op de awwwards website en sprak me meteen aan door de cartoony website en toffe nimaties.
 
 
-**Mijn opdracht:** [We Are Electric](https://www.we-are-electric.com/)
+**Mijn opdracht:** [Ugly Drinks](https://uglydrinks.com/#!)
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/screenshot1.jpg" width="400px" alt="omschrijving van de pagina">
+## shop
+
+![shop](https://user-images.githubusercontent.com/36195440/104191528-e6ecde80-541d-11eb-8e07-c1476e1d08ff.png)
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/screenshot2.jpg" width="400px" alt="omschrijving van de pagina">
+## detail
 
-## breakdown schets 1
+![detail](https://user-images.githubusercontent.com/36195440/104191522-e6544800-541d-11eb-9d64-c6d7d2786d7e.png)
+
+## breakdown schets 1: dit is de breakdown schets die ik had gemaakt voor de website van We Are Electric (mijn eerste keuze).
+Ik was van deze website afgestapt omdat deze naar mijn mening niet genoeg uitdaging had en de website niet meer onderhouden werd.
+
 
 ![breakdown1](https://user-images.githubusercontent.com/36195440/99259280-0d294000-281a-11eb-9339-96b7d84be877.jpg)
 
+## voortgang
 
-## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waar ik de uitdaging heb opgezocht en wat ik verder nog zou willen aanpassen aan de pagina..
 
+### TO-DO's & would/should haves
 
-
-## Eindgesprek (week 7/8)
-
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat-
-
-
-
-## Voortgang 3 (week 6)
-
--same as voortgang 1-
+- [x] Maak het snappable menu na
+- [x] Maak shop responsive
+- [x] positioneer met flexbox en position values
+- [x] CSS variabelen (kleur)
+- [x] JS micro interactie in navigatie / scroll events
+- [x] Navigatie animatie
+- [ ] SVG animatie
+- [ ] Extra toegankelijkheids laag
+- [ ] Formulieren met gestileerde states
+- [ ] html elementen nogmaals checken op semantiek
 
 
+## uitdagingen
+### responsive 
+![responsive](https://user-images.githubusercontent.com/36195440/104194684-ed7d5500-5421-11eb-93b6-a95988f7b67c.gif)
 
-## Voortgang 2 (week 5)
+Als extra laag heb ik ervoor gekozen om mijn pagina responsive te maken, De uitdaging lag hier in het menu dat zich anders gedraagt op kleine en grote schermen.
 
--same as voortgang 1-
+### Animatie en scroll events
+![navigation](https://user-images.githubusercontent.com/36195440/104194701-f110dc00-5421-11eb-8715-1ccc880cead7.gif)
 
+In mijn navigatie zit een animatie verwerkt op mobiel scherm, met scroll events wordt het menu geupdate als de gebruiker scrolled, ik heb mijn JS bestand voorzien met commentaar waarin ik beschrijf hoe ik dit heb aangepakt.
 
+## bronnen
+the usual: 
+- MDN Web Docs
+- W3schools
+- Stackoverflow threads
 
-## Voortgang 1 (week 3)
+## codepen oeffeningen
+[Flexbox 1](https://codepen.io/ReiniervLimpt/pen/oNLOLVE)
 
-### Stand van zaken
+[Flexbox 2](https://codepen.io/ReiniervLimpt/pen/QWEPBZX)
 
--dit ging goed & dit was lastig-
+[Positioneren](https://codepen.io/ReiniervLimpt/pen/pobYRKg)
 
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
-
-
-## Breakdownschets (week 1)
-
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+[Typografie 1 & 2](https://codepen.io/ReiniervLimpt/pen/wvWQQgK)
