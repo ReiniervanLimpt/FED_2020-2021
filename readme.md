@@ -41,22 +41,8 @@ Ik was van deze website afgestapt omdat deze naar mijn mening niet genoeg uitdag
 
 Ik ben niet bij alle feedbackgesprekken geweest, dus hier zal ik beschrijven waar ik de uitdaging heb opgezocht en wat ik verder nog zou willen aanpassen aan de pagina..
 
-### TO-DO's & would/should haves
-
-- [x] Maak het snappable menu na
-- [x] Maak shop responsive
-- [x] positioneer met flexbox en position values
-- [x] CSS variabelen (kleur)
-- [x] JS micro interactie in navigatie / scroll events
-- [x] Navigatie animatie
-- [ ] SVG animatie
-- [ ] Extra toegankelijkheids laag
-- [ ] Formulieren met gestileerde states
-- [ ] html elementen nogmaals checken op semantiek
-
-
 ## uitdagingen
-### responsive 
+### responsive
 ![responsive](https://user-images.githubusercontent.com/36195440/104194684-ed7d5500-5421-11eb-93b6-a95988f7b67c.gif)
 
 Als extra laag heb ik ervoor gekozen om mijn pagina responsive te maken, De uitdaging lag hier in het menu dat zich anders gedraagt op kleine en grote schermen.
@@ -67,7 +53,7 @@ Als extra laag heb ik ervoor gekozen om mijn pagina responsive te maken, De uitd
 In mijn navigatie zit een animatie verwerkt op mobiel scherm, met scroll events wordt het menu geupdate als de gebruiker scrolled, ik heb mijn JS bestand voorzien met commentaar waarin ik beschrijf hoe ik dit heb aangepakt.
 
 ## bronnen
-the usual: 
+the usual:
 - MDN Web Docs
 - W3schools
 - Stackoverflow threads
