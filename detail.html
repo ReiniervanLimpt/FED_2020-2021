@@ -15,15 +15,44 @@
 <body>
 	<main>
 		<div id=detail-page>
+			<nav>
+				<ul>
+					<li><img src="images/logo-ugly.svg" alt=""></li>
+					<li><img src="images/logo-ugly.svg" alt=""></li>
+					<li><img src="images/logo-ugly.svg" alt=""></li>
+					<li><img src="images/logo-ugly.svg" alt=""></li>
+					<li><img src="images/logo-ugly.svg" alt=""></li>
+				</ul>
+			</nav>
 			<div id="product-splash__container">
-				<img src="images/ugly-fruit-sour-apple.png" alt="">
-				<span>limited edition</span>
-				<span>
+				<div>
+					<aside>
+						<img src="images/ugly-fruit-sour-apple.png" alt="">
+						<span>limited edition</span>
+						<form>
+							<label for="flavor">flavor</label>
+							<select name="flavor">
+								<option value="sour apple">sour apple</option>
+								<option value="sourer apple">sourer apple</option>
+							</select>
+							<div>
+								<button id="decrease">-</button>
+								<input readonly type="number" min="1" max="10" step="1" value="1" class="qty__input">
+								<button id="increase">+</button>
+							</div>
+							<span>30.00</span>
+							<input type="submit" value="sold out">
+						</form>
+					</aside>
+				</div>
+				<div>
+					<span>
 				<strong>12</strong>
 				<small>cans</small>
 			</span>
-				<img src="images/sour-apple-detail.png" alt="">
-				<img class="mascot" src="images/sour-apple-mascot.png" alt="">
+					<img src="images/limited-edition-3.png" alt="">
+					<img class="mascot" src="images/sour-apple-mascot.png" alt="">
+				</div>
 			</div>
 			<div id="product-specs__container">
 				<span>got an f</span>
@@ -97,6 +126,7 @@
 			<li><a href="">refund policy</a></li>
 		</ul>
 	</footer>
+	<script src="scripts/heightGetter.js"></script>
 </body>
 
 </html>

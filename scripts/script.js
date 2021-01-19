@@ -2,6 +2,20 @@ const trackTab = document.querySelector('#shop__tabs-track')
 const shopTrack = trackTab.querySelector('ul')
 const trackTabs = trackTab.querySelectorAll('li')
 
+const shopItems = document.querySelector('#shop__items')
+
+const allButtons = document.querySelectorAll('button')
+
+allButtons.forEach(item => {
+  const itemSplash = item.parentNode.parentNode.querySelector('div')
+  item.addEventListener("mouseenter", () => {
+    itemSplash.classList.add('grow')
+  })
+  item.addEventListener("mouseleave", () => {
+    itemSplash.classList.remove('grow')
+  })
+})
+
 const allShopItems = document.querySelector('#shop__items')
 allShopItems.querySelectorAll('article').forEach(item =>
   item.addEventListener('click', () => {
